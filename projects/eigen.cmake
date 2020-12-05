@@ -8,8 +8,8 @@ set(PRO_EIGEN
   DESC "C++ template library for linear algebra"
   REPO "repo" https://bitbucket.org/eigen/eigen "eigen hg repo on bitbucket"
   VER ${VER}
-  DLURL http://bitbucket.org/eigen/eigen/get/${VER}.tar.bz2
-  DLMD5 cc1bacbad97558b97da6b77c9644f184
+  DLURL https://gitlab.com/libeigen/eigen/-/archive/${VER}/eigen-${VER}.tar.bz2
+  DLMD5 efad2bd915ca85c8de5b7e095c64ca2b
   DLNAME eigen-${VER}.tar.bz2
   )
 ########################################
