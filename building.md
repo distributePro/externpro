@@ -47,6 +47,7 @@ This serves two purposes.
 First, files written by the build process to *\_bldpkgs/* and *build/* persist on the host.
 Second, assuming *parent/* is not on the system partition, this avoids writing excessive data to the system partition as would occur without the mounts.
 These are three individual mounts, so nothing else in *parent/* on the host is mounted into the container.
+These directories must already exist on the host; if they don't, the container will fail to start.
 
 ### Starting the Container
 
