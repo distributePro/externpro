@@ -20,6 +20,7 @@ RUN set -eux; \
     mesa-libGLU-devel \
     ncurses-devel \
     ninja-build \
+    python-devel \
     wget; \
   yum --assumeyes --quiet clean all; \
   ln -s cmake3 /usr/bin/cmake; \
