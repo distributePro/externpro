@@ -14,7 +14,7 @@ RUN set -eux; \
   yum install --assumeyes \
     cmake3 \
     git \
-    gtk2-devel \
+    gtk3-devel \
     make \
     mesa-libGL-devel \
     mesa-libGLU-devel \
@@ -24,6 +24,7 @@ RUN set -eux; \
     wget; \
   yum --assumeyes --quiet clean all; \
   ln -s cmake3 /usr/bin/cmake; \
+  ln -s ccmake3 /usr/bin/ccmake; \
   ln -s ctest3 /usr/bin/ctest; \
   ln -s cpack3 /usr/bin/cpack
 
